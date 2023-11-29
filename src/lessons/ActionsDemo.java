@@ -16,7 +16,7 @@ public class ActionsDemo {
 		chrome.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		chrome.navigate().to("https://www.amazon.in/");
 		Actions a = new Actions(chrome); //creating an object of Action class
-		a.moveToElement(chrome.findElement(By.xpath("//span[@class='nav-line-2']/span[@class='nav-icon nav-arrow']"))).build().perform(); // mouse hover to "Account @ Lists"
+		a.moveToElement(chrome.findElement(By.xpath("//span[@class='nav-line-2']/span[@class='nav-icon nav-arrow']"))).build().perform(); // mouse hover to "Account & Lists" option in amazon India home page
 		
 
 	}
