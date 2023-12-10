@@ -20,9 +20,8 @@ public class ActionsDemo {
 		Actions a = new Actions(chrome); //creating an object of Action class
 		//mouse hover to the search-box and click then press left-shift button and enter "macbook"(to make all in caps) then double click on the text to select all of the text
 		a.moveToElement(chrome.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.LEFT_SHIFT).sendKeys("macbook").doubleClick().build().perform();
-		// mouse hover to "Account @ Lists" and right-click on that
+        //mouse hover to "Account & Lists" option in amazon India home page and right-click on that
 		a.moveToElement(chrome.findElement(By.xpath("//a[@id='nav-link-accountList']"))).contextClick().build().perform();
-		
 
 	}
 
