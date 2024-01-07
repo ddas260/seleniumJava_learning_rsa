@@ -8,10 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class baseCusCode {
+public class BaseCusCode {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		WebDriver chrome = new ChromeDriver();
 		chrome.manage().window().maximize();
 		chrome.navigate().to("https://rahulshettyacademy.com/seleniumPractise/");
@@ -39,5 +38,4 @@ public class baseCusCode {
 			}
 		}
 	}
-
 }

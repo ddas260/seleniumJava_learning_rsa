@@ -7,10 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Locators {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 //		GeoogleChrome
 //		Locate the file and assign to webdriver
-		System.setProperty("webdriver.chrome.driver", "C:/BrowserDrivers/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "C:/BrowserDrivers/chromedriver.exe");
 //		Creating a object of webdriver (invoking the browser)
 		WebDriver chrome=new ChromeDriver();
 		chrome.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

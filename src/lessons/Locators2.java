@@ -8,11 +8,10 @@ import org.testng.Assert;
 public class Locators2 {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 		String uName="Dibyajyoti";
 //		GeoogleChrome
 //		Locate the file and assign to webdriver
-		System.setProperty("webdriver.chrome.driver", "C:/BrowserDrivers/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "C:/BrowserDrivers/chromedriver.exe");
 //		Creating a object of webdriver (invoking the browser)
 		WebDriver chrome=new ChromeDriver();
 		chrome.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -37,10 +36,9 @@ public class Locators2 {
 		System.out.println(chrome.findElement(By.cssSelector("div[class='login-container'] h2")).getText());
 		Assert.assertEquals(chrome.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+uName+",");
 		Thread.sleep(1000);//pause the script for 1000ms
-		chrome.findElement(By.xpath("//*[text()='Log Out']")).click();//"//*[text()='Log Out']" this xpath indicated find element using any tag whicg has 'Log Out' text in it
+		chrome.findElement(By.xpath("//*[text()='Log Out']")).click();//"//*[text()='Log Out']" this xpath indicated find element using any tag which has 'Log Out' text in it
 		Thread.sleep(3000);//pause the script for 3000ms
 		chrome.quit();
-
 	}
 	
 	public static String getPassword(WebDriver c) throws InterruptedException {
@@ -53,8 +51,6 @@ public class Locators2 {
 		//String p3=p2[1];
 		Thread.sleep(1000);
 		c.findElement(By.className("go-to-login-btn")).click();
-		return p2;
-		
+		return p2;		
 	}
-
 }
