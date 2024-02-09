@@ -24,8 +24,9 @@ public class Test1 {
 		
 		//get the name count which starts with 'A' using stream
 		Stream<String> c = names.stream();
-		Long count = c.filter(s->s.startsWith("A")).count();
+		Long  count = c.filter(s->s.startsWith("A")).count();
 		System.out.print(count);
+		
 		
 
 	}
