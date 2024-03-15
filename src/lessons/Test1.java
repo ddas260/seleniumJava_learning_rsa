@@ -1,6 +1,7 @@
 package lessons;
 
 import java.util.ArrayList;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class Test1 {
@@ -25,10 +26,22 @@ public class Test1 {
 		//get the name count which starts with 'A' using stream
 		Stream<String> c = names.stream();
 		Long  count = c.filter(s->s.startsWith("A")).count();
-		System.out.print(count);
+
 		
+//		Long count = c.filter(
+//				new Predicate<String>(){
+//					public boolean test(String s) {
+//						return false;
+//						
+//					}
+//				}).count();
+				
+				System.out.print(count);
+		//To print all names which starts with "A"		
+		c.filter(s->s.startsWith("A")).forEach(s->System.out.println(s));
 		
 
 	}
 
+	
 }
